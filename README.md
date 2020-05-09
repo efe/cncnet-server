@@ -1,3 +1,5 @@
+# cncnet-server
+
 A dockerized version of cncnet-server-core.
 
 You can simply run:
