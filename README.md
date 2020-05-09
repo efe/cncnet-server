@@ -2,7 +2,8 @@
 
 ## References
 - [Hosting Red Alert 2 Server on Cncnet](https://efe.me/2020/05/hosting-red-alert-2-server-on-cncnet)
-- [Docker Hub](https://hub.docker.com/r/efeoge/cncnet_server)
+- [Image in Docker Hub](https://hub.docker.com/r/efeoge/cncnet_server)
+- https://forums.cncnet.org/topic/6325-how-to-host-a-cncnet-server/
 
 ## cncnet-server-core
 ```
