@@ -1,8 +1,8 @@
 # cncnet-server
 
-A dockerized version of cncnet-server-core.
+a dockerized version of cncnet-server-core.
 
-You can simply run:
+you can simply run:
 ```
 docker run --restart=unless-stopped -d -p 50001:50001 efeoge/cncnet_server --port 50001 --name "Cool name of your server" --maxclients 200
 ```
