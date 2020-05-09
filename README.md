@@ -1,11 +1,12 @@
-# Dockerized version of cncnet-server-core
+A dockerized version of cncnet-server-core.
 
-## References
-- [Hosting Red Alert 2 Server on Cncnet](https://efe.me/2020/05/hosting-red-alert-2-server-on-cncnet)
-- [Image in Docker Hub](https://hub.docker.com/r/efeoge/cncnet_server)
-- https://forums.cncnet.org/topic/6325-how-to-host-a-cncnet-server/
+You can simply run:
+```
+docker run --restart=unless-stopped -d -p 50001:50001 efeoge/cncnet_server --port 50001 --name "Cool name of your server" --maxclients 200
+```
 
-## cncnet-server-core
+## cncnet-server-core api
+
 ```
 cncnet-server-core 1.0.0
 Copyright (C) 2020 cncnet-server-core
@@ -33,3 +34,7 @@ Copyright (C) 2020 cncnet-server-core
 
   --version       Display version information.
 ```
+
+## references
+- https://efe.me/2020/05/hosting-red-alert-2-server-on-cncnet
+- https://forums.cncnet.org/topic/6325-how-to-host-a-cncnet-server/
