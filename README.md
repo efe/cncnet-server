@@ -1,19 +1,21 @@
 # cncnet-server
 
-a dockerized version of cncnet-server-core.
+a dockerized version of cncnet-server.
 
 you can simply run:
 ```
-docker run --restart=unless-stopped -d -p 50001:50001 efeoge/cncnet_server --port 50001 --name "Cool name of your server" --maxclients 200
+docker run --restart=unless-stopped -d -p 50001:50001/udp -p 50000:50000/udp -p 50000:50000/tcp efeoge/cncnet_server --port 50001 --portv2 50000 --name "Cool name of your server" --maxclients 200
 ```
 
-## cncnet-server-core api
+## cncnet-server api
 
 ```
-cncnet-server-core 1.0.0
-Copyright (C) 2020 cncnet-server-core
+cncnet-server 3.0.0.0
+Copyright (C) 2022 cncnet-server
 
   --port          (Default: 50001) Port used for the tunnel server
+
+  --portv2        (Default: 50000) Port used for the V2 tunnel server
 
   --name          (Default: Unnamed server) Name of the server
 
@@ -29,10 +31,12 @@ Copyright (C) 2020 cncnet-server-core
 
   --iplimit       (Default: 8) Maximum clients allowed per IP address
 
-  --nop2p         (Default: false) Disable NAT traversal ports (8054, 3478, 1234
-                  UDP)
+  --iplimitv2     (Default: 4) Max game request allowed per IP address on V2
+                  tunnel
 
-                    --help          Display this help screen.
+  --nop2p         (Default: false) Disable NAT traversal ports (8054, 3478 UDP)
+
+  --help          Display this help screen.
 
   --version       Display version information.
 ```
